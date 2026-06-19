@@ -1055,6 +1055,21 @@ button.gallery-item--wide .gallery-item-inner {
   font-size: 0.85em;
 }
 
+/* Wedding breakfast / buffet image grid */
+.buffet-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.5rem 0 1.75rem;
+}
+
+@media (min-width: 600px) {
+  .buffet-gallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+
 /* Form */
 .form-section {
   max-width: 640px;
@@ -1312,6 +1327,75 @@ textarea {
   text-align: center;
   font-size: 0.8rem;
   color: #888;
+}
+
+/* Floating WhatsApp button */
+.whatsapp-fab {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1500;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.whatsapp-fab:hover {
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.55);
+}
+
+.whatsapp-fab:focus-visible {
+  outline: 3px solid var(--charcoal);
+  outline-offset: 3px;
+}
+
+.whatsapp-fab svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-fab {
+    width: 60px;
+    height: 60px;
+    right: 1.75rem;
+    bottom: 1.75rem;
+  }
+}
+
+/* WhatsApp inline button (e.g. contact page) */
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5b;
+  color: #fff;
+}
+
+.btn-whatsapp svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.contact-direct {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem;
 }
 
 /* Mobile nav */

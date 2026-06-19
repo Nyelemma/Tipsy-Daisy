@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nyelemma.github.io/Tipsy-Daisy/sitemap.xml
