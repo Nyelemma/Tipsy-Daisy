@@ -1,4 +1,4 @@
-/* Tipsy Daisy Mobile Bar — main stylesheet */
+/* Tipsy Daisy Mobile Bar: main stylesheet */
 
 :root {
   --cream: #F8F5F0;
@@ -449,9 +449,26 @@ p:last-child { margin-bottom: 0; }
 
 .hero--photo h1 {
   color: var(--cream);
-  max-width: 16ch;
+  max-width: 18em;
   margin-inline: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1.12;
+  text-wrap: balance;
+  font-size: clamp(1.35rem, 6.4vw, 3.05rem);
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 480px) {
+  .hero--photo .hero-inner {
+    padding-top: 4.5rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .hero--photo h1 {
+    max-width: 100%;
+    letter-spacing: 0.02em;
+  }
 }
 
 .hero--photo .lead {
@@ -768,7 +785,7 @@ section:nth-of-type(even) {
   object-position: center;
 }
 
-/* Full gallery page — same cell size, same gaps */
+/* Full gallery page: same cell size, same gaps */
 .gallery-page-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
