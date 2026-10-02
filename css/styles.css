@@ -616,7 +616,19 @@ section:nth-of-type(even) {
 
 @media (min-width: 1000px) {
   .cards-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .service-card {
+    grid-column: span 2;
+  }
+
+  .service-card:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  .service-card:nth-child(5) {
+    grid-column: 4 / span 2;
   }
 }
 
@@ -646,11 +658,13 @@ section:nth-of-type(even) {
   justify-content: center;
   margin-bottom: 1rem;
   color: var(--charcoal);
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 600;
   border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.service-icon svg {
+  width: 26px;
+  height: 26px;
+  display: block;
 }
 
 .service-card p {
