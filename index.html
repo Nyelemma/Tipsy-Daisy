@@ -8,20 +8,26 @@
       content="Tipsy Daisy Mobile Bar: luxury horsebox bar hire for weddings, parties, corporate events and festivals across the UK."
     />
     <title>Tipsy Daisy Mobile Bar | Luxury Mobile Bar Hire</title>
-    <link rel="canonical" href="https://nyelemma.github.io/Tipsy-Daisy/" />
+    <link rel="canonical" href="https://www.tipsydaisy.co.uk/" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#A8B5A2" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Tipsy Daisy Mobile Bar" />
     <meta property="og:title" content="Tipsy Daisy Mobile Bar | Luxury Mobile Bar Hire" />
-    <meta property="og:description" content="Luxury horsebox mobile bar hire for weddings, wedding breakfasts, parties, corporate events and festivals across the UK." />
-    <meta property="og:url" content="https://nyelemma.github.io/Tipsy-Daisy/" />
-    <meta property="og:image" content="https://nyelemma.github.io/Tipsy-Daisy/images/hero-horsebox.png" />
+    <meta property="og:description" content="Luxury horsebox mobile bar hire for weddings, parties, corporate events and festivals across the UK." />
+    <meta property="og:url" content="https://www.tipsydaisy.co.uk/" />
+    <meta property="og:image" content="https://www.tipsydaisy.co.uk/images/og-share.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The sage green Tipsy Daisy horsebox bar set up outdoors" />
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Tipsy Daisy Mobile Bar | Luxury Mobile Bar Hire" />
-    <meta name="twitter:description" content="Luxury horsebox mobile bar hire for weddings, wedding breakfasts, parties, corporate events and festivals across the UK." />
-    <meta name="twitter:image" content="https://nyelemma.github.io/Tipsy-Daisy/images/hero-horsebox.png" />
+    <meta name="twitter:description" content="Luxury horsebox mobile bar hire for weddings, parties, corporate events and festivals across the UK." />
+    <meta name="twitter:image" content="https://www.tipsydaisy.co.uk/images/og-share.jpg" />
+    <meta name="twitter:image:alt" content="The sage green Tipsy Daisy horsebox bar set up outdoors" />
+    <link rel="preload" as="image" href="images/hero-bar-background.jpg" fetchpriority="high" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,31 +39,77 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Tipsy Daisy Mobile Bar",
-        "description": "Luxury horsebox mobile bar hire and event catering for weddings, wedding breakfasts, private parties, corporate events and festivals across the UK.",
-        "url": "https://nyelemma.github.io/Tipsy-Daisy/",
-        "image": "https://nyelemma.github.io/Tipsy-Daisy/images/hero-horsebox.png",
-        "email": "Harrietpatterson@live.com",
-        "telephone": "+447737043143",
-        "priceRange": "££",
-        "areaServed": {
-          "@type": "Country",
-          "name": "United Kingdom"
-        },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+447737043143",
-          "email": "Harrietpatterson@live.com",
-          "contactType": "customer service",
-          "availableLanguage": "English"
-        },
-        "makesOffer": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wedding mobile bar hire" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event catering" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event planning" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private party bar hire" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate event bar hire" } }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.tipsydaisy.co.uk/#website",
+            "url": "https://www.tipsydaisy.co.uk/",
+            "name": "Tipsy Daisy Mobile Bar",
+            "description": "Luxury horsebox mobile bar hire for weddings, parties, corporate events and festivals across the UK.",
+            "inLanguage": "en-GB",
+            "publisher": { "@id": "https://www.tipsydaisy.co.uk/#business" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.tipsydaisy.co.uk/#webpage",
+            "url": "https://www.tipsydaisy.co.uk/",
+            "name": "Tipsy Daisy Mobile Bar | Luxury Mobile Bar Hire",
+            "description": "Tipsy Daisy Mobile Bar: luxury horsebox bar hire for weddings, parties, corporate events and festivals across the UK.",
+            "isPartOf": { "@id": "https://www.tipsydaisy.co.uk/#website" },
+            "about": { "@id": "https://www.tipsydaisy.co.uk/#business" },
+            "inLanguage": "en-GB",
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://www.tipsydaisy.co.uk/images/og-share.jpg",
+              "width": 1200,
+              "height": 630
+            }
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://www.tipsydaisy.co.uk/#business",
+            "name": "Tipsy Daisy Mobile Bar",
+            "slogan": "Convertible charm. Pourable joy.",
+            "description": "Luxury horsebox mobile bar hire and event catering for weddings, private parties, corporate events and festivals across the UK.",
+            "url": "https://www.tipsydaisy.co.uk/",
+            "image": "https://www.tipsydaisy.co.uk/images/og-share.jpg",
+            "logo": "https://www.tipsydaisy.co.uk/favicon.svg",
+            "email": "Harrietpatterson@live.com",
+            "telephone": "+447737043143",
+            "priceRange": "££",
+            "areaServed": { "@type": "Country", "name": "United Kingdom" },
+            "sameAs": [
+              "https://www.instagram.com/tip_sydaisy/",
+              "https://www.facebook.com/people/Tipsy-Daisy-Mobile-Bar/61582811261279/"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+447737043143",
+              "email": "Harrietpatterson@live.com",
+              "contactType": "customer service",
+              "availableLanguage": "English",
+              "areaServed": "GB"
+            },
+            "makesOffer": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Weddings", "url": "https://www.tipsydaisy.co.uk/services.html#wed" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event Catering", "url": "https://www.tipsydaisy.co.uk/services.html#weddingbreakfasts" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private Parties", "url": "https://www.tipsydaisy.co.uk/services.html#private" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate Events", "url": "https://www.tipsydaisy.co.uk/services.html#corp" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Festivals & Outdoor", "url": "https://www.tipsydaisy.co.uk/services.html" } }
+            ],
+            "review": [
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Fiona Gavriluk" },
+                "reviewBody": "Thank you so much for everything you’ve done. You made the wedding so much easier and we all can’t thank you enough! You are a real diamond."
+              },
+              {
+                "@type": "Review",
+                "author": { "@type": "Person", "name": "Amy Halliwell" },
+                "reviewBody": "Guys! You were absolutely fantastic on our special day and we wouldn’t have done this without you. Everyone was singing your praises and you made everything so much easier for us. Thank you to you and your team."
+              }
+            ]
+          }
         ]
       }
     </script>
@@ -419,8 +471,8 @@
         <div>
           <h2 class="sr-only">Social</h2>
           <ul class="footer-social">
-            <li><a href="https://instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a></li>
-            <li><a href="https://facebook.com/" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/tip_sydaisy/" rel="me noopener noreferrer" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/people/Tipsy-Daisy-Mobile-Bar/61582811261279/" rel="me noopener noreferrer" target="_blank">Facebook</a></li>
             <li><a href="https://wa.me/447737043143" rel="noopener noreferrer" target="_blank">WhatsApp</a></li>
             <li><a href="mailto:Harrietpatterson@live.com">Email</a></li>
           </ul>
