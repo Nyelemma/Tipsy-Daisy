@@ -1597,6 +1597,31 @@ textarea {
   color: #888;
 }
 
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-credit {
+  margin-top: 0.45rem;
+}
+
+.footer-bottom a {
+  color: var(--cream);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus-visible {
+  color: var(--rose);
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    padding-bottom: 6rem;
+  }
+}
+
 /* Floating WhatsApp button */
 .whatsapp-fab {
   position: fixed;
