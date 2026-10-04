@@ -128,7 +128,7 @@
       if (!ok) return;
 
       // Build a mailto: link to Tipsy Daisy from the form fields and open it
-      const RECIPIENT = "Harrietpatterson@live.com";
+      const RECIPIENT = "tipsydaisybar@gmail.com";
       const get = function (id) {
         const el = form.querySelector("#" + id);
         return el && el.value ? el.value.trim() : "";
