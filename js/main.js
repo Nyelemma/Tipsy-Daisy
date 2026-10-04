@@ -128,7 +128,7 @@
       if (!ok) return;
 
       // Build a mailto: link to Tipsy Daisy from the form fields and open it
-      const RECIPIENT = "Harrietpatterson@live.com";
+      const RECIPIENT = "tipsydaisybar@gmail.com";
       const get = function (id) {
         const el = form.querySelector("#" + id);
         return el && el.value ? el.value.trim() : "";
@@ -143,11 +143,11 @@
       const lines = [
         "Name: " + get("name"),
         "Email: " + get("email"),
-        "Phone: " + (get("phone") || "—"),
-        "Event type: " + (eventTypeLabel || "—"),
-        "Event date: " + (get("event-date") || "—"),
-        "Location: " + (get("location") || "—"),
-        "Guest numbers: " + (get("guests") || "—"),
+        "Phone: " + (get("phone") || "Not provided"),
+        "Event type: " + (eventTypeLabel || "Not provided"),
+        "Event date: " + (get("event-date") || "Not provided"),
+        "Location: " + (get("location") || "Not provided"),
+        "Guest numbers: " + (get("guests") || "Not provided"),
         "",
         "Message:",
         get("message"),
